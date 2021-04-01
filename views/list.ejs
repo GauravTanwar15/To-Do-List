@@ -7,7 +7,22 @@
     <title>To-Do-List</title>
 </head>
 <body>
-<h1>Its a <%= kindofDay %> !</h1>
+
+<h1> <%= kindofDay %></h1>
+
+    <ul>
+<!--adding new item in a list using loop-->
+  <%  for (var i=0; i<newListItems.length;i++){ %>
+        <li><%= newListItems[i] %></li>
+
+ <%   } %>
+    </ul>
+
+<form class="" action="/" method="post">
+
+    <input type="text" name="newItem">
+    <button type="submit" name="button">Add</button>
+</form>
 
 </body>
 </html>
